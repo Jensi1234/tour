@@ -1,0 +1,128 @@
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items:center; */
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+   
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/4K-Travel-Wallpaper-HD-Free-download.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  padding: 30px 30px ;
+ 
+ 
+
+}
+.login-container h2{
+  padding: 19px;
+  margin-right:300px;
+  color: #002855;
+  font-size: 200%;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-right: 200px;
+  
+  
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #001845;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-items: center;
+  margin-top: 10px;
+
+
+}
+
+button:hover {
+  background-color: #5C677D;
+  color: white;
+}
+
+
+
+  
+.p1 p {
+  margin-top: 20px;
+  margin-right: 270px;
+  color: #fff;
+}
+
+.p1 p a {
+  color: #78e943;
+  text-decoration: none;
+  font-weight: 15px;
+  
+}
+
+.p1 p a:hover {
+  text-decoration: underline;
+  font-size: 100%;
+  color:#fff;
+ 
+
+}
+
+.btn1{
+  margin-left: 130px;
+  align-items: center;
+}
+
+
+@media screen and (max-width:850px) {
+
+
+  .login-form{
+    margin: 0rem 1.5rem;
+    color: #2a2a2a;
+   
+  }
+
+  .login-container h2{
+    /* padding: 50px; */
+    margin-right:160px;
+    color: #002855;
+    font-size: 200%;
+  }
+
+  .p1 p{
+
+    position: relative;
+    left: 170px;
+    white-space:nowrap;
+  }
+  
+}
+
+

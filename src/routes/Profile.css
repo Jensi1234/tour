@@ -1,0 +1,31 @@
+/* Profile.css */
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    /* Add other styles for container layout if needed */
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Add other styles for the profile picture if needed */
+  }
+  
+  .profile-details {
+    margin-left: 20px; /* Adjust the margin as needed to create spacing between the image and details */
+    /* Add other styles for the profile details if needed */
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin-bottom: 3px;
+  }
+  
