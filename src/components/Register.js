@@ -31,13 +31,22 @@ const Register=()=> {
         e.preventDefault()
         
             axios.post('http://localhost:3000/',user)
-            .then(res=>console.log(res))
-            setUsers({
-            username:'',
-            email:'',
-            password:''
-            
-        })     
+            .then(res=>{
+              if(res.data.success)
+              {
+                alert("User Registered successfully")
+                setUsers({
+                  username:'',
+                  email:'',
+                  password:''
+                  
+              })   
+              }
+              else{
+                alert("Email already exist")
+              }
+            })
+           
     
     }
 
@@ -99,5 +108,3 @@ const Register=()=> {
 }
 
 export default Register;
-
-

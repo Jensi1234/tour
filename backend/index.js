@@ -55,25 +55,35 @@ app.post('/', async (req, res) => {
             password: hashedPassword // Save the hashed password
         });
 
-    //     await User.save();
-    //     console.log('User Added');
-    //     res.status(201).json({ msg: 'User added successfully' });
-    // } catch (error) {
-    //     console.error('Error adding a user', error);
-    //     res.status(500).json({ msg: 'Error adding a user' });
-    // }
-    const uname = await user.findOne({ username });
-  if (!uname) {
-    User.save()
-      .then(() => {
-        console.log("User Added");
-      })
-      .catch((e) => {
-        console.log("Error adding a user", e);
-      });
-  } else {
-    console.log("user already exists.");
-  }
+        const mail = await user.findOne({ email });
+
+            if (!mail) {
+              User.save()
+                .then(() => {
+                    res.json({ success: true, message: 'User registered successfully' });
+                })
+                .catch((e) => {
+                  console.log("Error adding a user", e);
+                });
+            } else {
+                res.json({ success: false, message: 'Username already exists' });
+
+            }
+
+    
+//     const uname = await user.findOne({ username });
+//   if (!uname) {
+//     User.save()
+//       .then(() => {
+//         console.log("User Added");
+//       })
+//       .catch((e) => {
+//         console.log("Error adding a user", e);
+//       });
+//   } else {
+//     console.log("user already exists.");
+//   }
+
 
 
 

@@ -12,16 +12,14 @@ function Profile(){
     
     <div className="profile-container">
       <img
-        src="https://i.pinimg.com/564x/58/67/95/58679583481018931679ba70915bd381.jpg" // Replace with the URL of your profile picture
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
         alt="Profile"
         className="profile-picture"
       />
       <div className="profile-details">
-        <h2>John Doe</h2>
-        <p>Email: john.doe@example.com</p>
+        <h2>Jane </h2>
+        <p>Email: jane@gmail.com</p>
        
-        <p>Location: New York, USA</p>
-        {/* Add other information about the user */}
       </div>
     </div>
 

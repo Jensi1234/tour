@@ -14,7 +14,7 @@ function Hero(props){
       <div className='hero-text'>
         <h1 data-aos="zoom-in" data-aos-duration="3000">{props.title}</h1>
         <p data-aos="zoom-out-up" data-aos-duration="3000">{props.text}</p>
-        <a  href="/travel" className={props.btnClass}>
+        <a  className={props.btnClass}>
             {props.buttonText}
           {/* < Travel/>  */}
         </a>
